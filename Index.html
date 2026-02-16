@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Pembayaran QR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #b30000, #ff1a1a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: #ffffff;
+    width: 380px;
+    max-width: 95%;
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+    padding: 28px;
+    text-align: center;
+}
+
+.header-bar {
+    height: 8px;
+    background: linear-gradient(90deg, #cc0000, #ff3333);
+    border-radius: 12px;
+    margin: -28px -28px 20px -28px;
+}
+
+h1 {
+    margin: 10px 0 5px;
+    color: #b30000;
+    font-size: 22px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.qr-box {
+    background: #fafafa;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    padding: 14px;
+    display: inline-block;
+}
+
+.qr-box img {
+    width: 240px;
+    max-width: 100%;
+    height: auto;
+}
+
+.transfer-text {
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #b30000;
+}
+
+.note {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.wa-info {
+    margin-top: 12px;
+    background: #fff5f5;
+    border: 1px solid #ffcccc;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #990000;
+}
+
+.footer {
+    margin-top: 18px;
+    font-size: 12px;
+    color: #999;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <div class="header-bar"></div>
+
+    <h1>Pembayaran QR</h1>
+    <div class="subtitle">Silakan scan kode di bawah</div>
+
+    <div class="qr-box">
+        <!-- GANTI src DI BAWAH DENGAN FILE QR KAMU JIKA PERLU -->
+        <img src="qris.png" alt="QR Pembayaran">
+    </div>
+
+    <div class="transfer-text">
+        Transfer di sini
+    </div>
+
+    <div class="note">
+        Scan QR menggunakan aplikasi pembayaran kamu
+    </div>
+
+    <div class="wa-info">
+        Setelah transfer, bukti pembayaran akan otomatis
+        dikirimkan melalui WhatsApp dalam 5–10 menit.
+    </div>
+
+    <div class="footer">
+        Sistem Pembayaran Digital
+    </div>
+</div>
+
+</body>
+</html>
